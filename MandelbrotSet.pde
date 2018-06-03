@@ -3,6 +3,7 @@ GifsGenerator gif = new GifsGenerator(this, "mandelbrot");
 
 void setup() {
   size(800, 800);
+  background(230, 230, 255);
   gif.addGenerator(80,40,true);
   gif.addGenerator(750,25,true);
 }
@@ -27,7 +28,6 @@ void draw() {
       point(i, j);
     }
   }
-  //println("iteration: " + iterations);
   iterations++;
   gif.recordFrame();
 }
